@@ -50,7 +50,7 @@ How long you spent working on this assignment
 # Time Estimate
 ## Feature #1: Deployment
 * Estimate of time needed to complete: 1hr
-* Start time: 
+* Start time: 5:25pm
 * Finish time: 
 * Actual time needed to complete:
 
