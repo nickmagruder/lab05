@@ -1,15 +1,23 @@
 {
   "name": "deployment",
   "version": "1.0.0",
-  "description": "",
+  "description": "### Collaborators on Labs 2 & 3, the foundation for this app: * Nick Magruder * James Gerstenberger * Sang Lee (for Lab-03)",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Nick Magruder",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.17.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickmagruder/lab05.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nickmagruder/lab05/issues"
+  },
+  "homepage": "https://github.com/nickmagruder/lab05#readme"
 }
