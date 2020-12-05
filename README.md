@@ -15,6 +15,8 @@
 * Google Fonts
 * W3 Schools
 * Oscarotero.com jQuery cheat sheet
+* Goat sound from freesound.org, creative commons 0 license: https://freesound.org/people/poodaddy69/sounds/495688/
+* Sound play JS adapted from pabolo12 on StackOverflow: https://stackoverflow.com/questions/51572489/playing-sound-on-click-event-with-pure-javascript
 
 ### Assignment Instructions:
 
@@ -30,7 +32,7 @@ Add an event listener to each animal  such that when you click, a sound plays (m
 ### Feature #3:
 On the same event listen, trigger a Modal to pop up with the description of the animal you clicked on.
 
-### Strech Goal: 
+### Stretch Goal: 
 Trigger more than one sound file to play (randomly selected, a different one per animal, one for even horned animals, one for odd, whatever you like)
 
 ### Submission Instructions
@@ -51,11 +53,11 @@ How long you spent working on this assignment
 ## Feature #1: Deployment
 * Estimate of time needed to complete: 1hr
 * Start time: 5:25pm
-* Finish time: 
-* Actual time needed to complete:
+* Finish time: 6:50pm
+* Actual time needed to complete: 1 hr 25min
 
 ## Feature #2: Animal Sound
-* Estimate of time needed to complete: 
+* Estimate of time needed to complete: 1 hr
 * Start time: 
 * Finish time: 
 * Actual time needed to complete:

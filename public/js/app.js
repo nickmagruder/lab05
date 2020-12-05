@@ -16,34 +16,6 @@ function Animal(jsonObject, pageNum) {
   this.page = pageNum;
 }
 
-/* Animal.prototype.render = function () {
-  const $newAnimalLi = $('#photo-template').find('li').clone();
-  $newAnimalLi.attr('class', this.keyword);
-  $newAnimalLi.find('h2').text(this.title);
-  $newAnimalLi.find('img').attr('src', this.image_url);
-  $newAnimalLi.find('p').text(this.description);
-  $('ul').append($newAnimalLi);
-
-  const $newAnimalOption = $('#templateSelector').find('option').clone();
-  if (keywordArray.includes(this.keyword) !== true) {
-    keywordArray.push(this.keyword);
-    $newAnimalOption.attr('value', this.keyword);
-    $newAnimalOption.text(this.keyword);
-    $('select').append($newAnimalOption);
-  }
-}; */
-// const initialSort = () =>{
-//   animals.sort((leftVal, rightVal) => {
-//     if(leftVal.horns > rightVal.horns){
-//       return -1;
-//     }else if (leftVal.horns< rightVal.horns){
-//       return 1;
-//     }else{
-//       return 0;
-//     }
-//   });
-// };
-
 $.ajax({
   url: './data/page-2.json',
   async: true
@@ -61,7 +33,6 @@ $.ajax({
 }).then(parse => {
 
   parse.forEach(animalJSONObject => animals1.push(new Animal(animalJSONObject, 'page1')));
-  // initialSort();
   animals1.sort(sortImageByHorn);
   animals1.forEach(animal => animal.render());
 });
@@ -128,9 +99,14 @@ const selectImages = (event) => {
     $('li').hide();
     $(`li[value^='${event.target.value}']`).show();
   }
-  // $('#keyword option:selected').text();
-  // $('ul').empty();
 };
+// Sound play JS adapted from pabolo12 on StackOverflow: https://stackoverflow.com/questions/51572489/playing-sound-on-click-event-with-pure-javascript
+
+/* function playGoatSound(){
+  let sound = new Audio("goat.m4a");
+  sound.play();
+} */
+
 
 $('#keyword').on('change', selectImages);
 $('nav').on('click', showImages);
@@ -148,3 +124,4 @@ $('#horns, #title').on('click', event => {
 });
 
 
+/* $('body').on('click', 'img', playGoatSound()); */
