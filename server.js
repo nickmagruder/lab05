@@ -9,4 +9,6 @@ app.use(express.static('./public'));
 
 app.listen(PORT, () => console.log('yay the server actually started'));
 
-
+app.get('/',(req,res) => {
+    res.send('homepage')
+})
